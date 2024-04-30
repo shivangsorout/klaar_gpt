@@ -1,12 +1,11 @@
 import 'package:dio/dio.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'dart:developer' as devtools show log;
-
-import 'package:open_ai_test/services/services_constant.dart';
 
 final dio = Dio();
 
-const baseUrl =
-    'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=$apiKey';
+final baseUrl =
+    'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${dotenv.env['geminiApiKey']}';
 
 final options = Options(
   headers: {
