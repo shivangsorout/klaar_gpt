@@ -47,7 +47,7 @@ Once you have obtained the API key, you need to configure it in the Flutter appl
 2. **Store the API Key:** Inside the .env file, add a line to store your Gemini API key:
 
 ```
-geminiApiKey = 'YOUR_API_KEY_HERE';
+geminiApiKey = YOUR_API_KEY_HERE
 ```
 
 By following these steps, you can configure and access your Gemini API key securely within your Flutter application without needing additional package setup.
